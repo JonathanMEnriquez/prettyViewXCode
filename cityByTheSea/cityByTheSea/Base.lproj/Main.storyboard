@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cityByTheSea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="LZd-rg-FI2">
+                                <rect key="frame" x="20" y="0.0" width="1326" height="1024"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFt-i9-vVP">
+                                <rect key="frame" x="0.0" y="717" width="1366" height="307"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City by the Sea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yeb-40-dja">
+                                        <rect key="frame" x="20" y="20.5" width="1326" height="27"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Such a Beautiful View!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-Ks-Ja5">
+                                        <rect key="frame" x="20" y="62.5" width="1326" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7cH-Ks-Ja5" firstAttribute="leading" secondItem="aFt-i9-vVP" secondAttribute="leading" constant="20" id="6e1-Jc-6Uh"/>
+                                    <constraint firstItem="Yeb-40-dja" firstAttribute="leading" secondItem="aFt-i9-vVP" secondAttribute="leading" constant="20" id="8Oz-1F-18g"/>
+                                    <constraint firstItem="Yeb-40-dja" firstAttribute="top" secondItem="aFt-i9-vVP" secondAttribute="top" constant="20" id="AhA-Ux-YLE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yeb-40-dja" secondAttribute="trailing" constant="20" id="JdI-Aj-SbJ"/>
+                                    <constraint firstItem="7cH-Ks-Ja5" firstAttribute="top" secondItem="Yeb-40-dja" secondAttribute="bottom" constant="15" id="fQS-sK-DVL"/>
+                                    <constraint firstAttribute="trailing" secondItem="7cH-Ks-Ja5" secondAttribute="trailing" constant="20" id="gzK-8l-SSk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aFt-i9-vVP" secondAttribute="trailing" id="AoN-ul-15Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aFt-i9-vVP" secondAttribute="bottom" id="IhS-YH-IKB"/>
+                            <constraint firstItem="aFt-i9-vVP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PWF-kC-Afi"/>
+                            <constraint firstItem="LZd-rg-FI2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-20" id="Q06-16-Ih2">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-45"/>
+                            </constraint>
+                            <constraint firstItem="LZd-rg-FI2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jR5-lf-95m">
+                                <variation key="heightClass=compact-widthClass=compact" constant="65"/>
+                            </constraint>
+                            <constraint firstAttribute="bottomMargin" secondItem="LZd-rg-FI2" secondAttribute="bottom" id="mYW-NY-kag">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-45"/>
+                            </constraint>
+                            <constraint firstItem="aFt-i9-vVP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="tHn-zS-0h6"/>
+                            <constraint firstItem="LZd-rg-FI2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zW6-Of-7mI">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-65"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1252" y="-377"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="landscape" width="2005" height="1085"/>
+    </resources>
+</document>
